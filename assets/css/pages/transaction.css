@@ -1,0 +1,233 @@
+.transaction-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transaction-tabs .transaction-child-tabs.active {
+    width: 100%;
+    background: #000;
+    color: #fff;
+    border-top: 2px solid #e00a15;
+    border-right: 1px solid #e00a15;
+    border-left: 1px solid #e00a15;
+    border-bottom: 1px solid #000;
+}
+
+.transaction-tabs .transaction-child-tabs {
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 40px;
+    font-size: 13px;
+    color: #fff;
+    background: #212121;
+    border-top: 1px solid #404040;
+    line-height: 40px;
+    border-right: 1px solid #404040;
+    border-bottom: 1px solid #e00a15;
+  
+}
+
+.transaction-wrapper {
+    padding: 10px;
+}
+
+.transaction-box {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 20px 10px 15px;
+
+    border: 1px solid #393a3d;
+    background: #0f0f10;
+    margin-bottom: 10px;
+}
+
+.transaction-box h3 {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 18px;
+    background: linear-gradient(to left, #8d8d95, #c9c9cf);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.transaction-box li {
+    position: relative;
+    padding: 0 0 0 17px;
+    margin: 0 0 5px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.transaction-box span:first-child {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.transaction-inner-section {
+    padding: 0 5px 10px;
+    border-bottom: 1px solid #393a3d;
+    margin-bottom: 10px;
+}
+
+.transaction-inner-section .title {
+    margin-bottom: 10px;
+}
+
+
+
+#newAccount {
+    width: 137px;
+    height: 37px;
+    line-height: 37px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    background: #0f49d1;
+}
+
+.child-flex {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.trans-button {
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin: 5px 0 0 5px;
+    background: linear-gradient(to left,#d8d8d8,#fbfbfb);
+    border: 0;
+    border-radius: 5px;
+    color: #0f0f10;
+    font-size: 15px;
+    font-weight: 600;
+    width: 33%;
+
+}
+
+.trans-button:first-child {
+    margin-left: 0;
+}
+
+.default {
+    background: linear-gradient(#838383,#4b4b4b);
+    color: #fff;
+}
+
+
+.secondary {
+    max-width: 120px;
+    border: 2px solid #e00a15;
+    font-size: 12px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: transparent;
+    color: #fff;
+    line-height: unset;
+
+}
+
+.input-tras-wrapper {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#IC_Amount {
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid #393a3d;
+    outline: 0;
+    border-radius: 5px;
+    background: #0f0f10;
+    color: #fff;
+    margin-right: 5px;
+}
+
+
+
+#IC_Amount_2 {
+    width: 100%;
+    max-width: 200px;
+    padding: 0 10px;
+    height: 40px;
+    border: 1px solid #393a3d;
+    outline: 0;
+    border-radius: 5px;
+    background: #0f0f10;
+    color: #fff;
+    margin-right: 5px;
+}
+
+
+.help {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.submit-deposit {
+    width: 130px;
+    height: 45px;
+    line-height: 45px;
+    margin: 10px auto;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    background: #e00a15;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+
+.submit-withdrawal {
+    width: 130px;
+    height: 45px;
+    line-height: 45px;
+    margin: 10px auto;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    background: #0f49d1;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+
+.trans-history-table {
+    width: 100%;
+    background: #333;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.history-btn {
+    width: 85px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #3f4043;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    background: #000000;
+}

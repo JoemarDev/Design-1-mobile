@@ -1,0 +1,145 @@
+.main-section {
+    background: url('../../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 800px;
+}
+
+.main-section-inner-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.main-section-inner-wrapper .login-page-hero{
+    max-width: 90%;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.main-section-inner-wrapper .login-form {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 452px;
+    padding: 25px 20px;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.8);
+    margin-bottom: ;
+}
+
+.login-form  .input-wrapper {
+    margin-bottom: 10px;
+    position: relative;
+    width: 100%;
+}
+
+.login-form  .input-wrapper  .right-icon {
+    position: absolute;
+    right: 15px;
+    top: 3px;
+    color: #b1b1b1;
+    font-size: 20px;
+}
+
+.login-form  input {
+    width: 100%;
+    border: none;
+    height: 40px;
+    background: #333333;
+    color: #fff;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.input-wrapper .slider {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    background: #333;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+
+    color: #787878;
+}
+
+.inner-slider {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    background-color: #121212;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-button {
+    width: 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #cccccc;
+    z-index: 3;
+    cursor: move;
+    color: #ff9e77;
+    font-size: 16px;
+    font-weight: 900;
+        background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0ZDhlNWY5My05NmI0LTRlNWQtOGFjYi03ZTY4OGYyMTU2ZTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTEyNTVEMURGMkVFMTFFNEI5NDBCMjQ2M0ExMDQ1OUYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTEyNTVEMUNGMkVFMTFFNEI5NDBCMjQ2M0ExMDQ1OUYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2MTc5NzNmZS02OTQxLTQyOTYtYTIwNi02NDI2YTNkOWU5YmUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NGQ4ZTVmOTMtOTZiNC00ZTVkLThhY2ItN2U2ODhmMjE1NmU2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+YiRG4AAAALFJREFUeNpi/P//PwMlgImBQkA9A+bOnfsIiBOxKcInh+yCaCDuByoswaIOpxwjciACFegBqZ1AvBSIS5OTk/8TkmNEjwWgQiUgtQuIjwAxUF3yX3xyGIEIFLwHpKyAWB+I1xGSwxULIGf9A7mQkBwTlhBXAFLHgPgqEAcTkmNCU6AL9d8WII4HOvk3ITkWJAXWUMlOoGQHmsE45ViQ2KuBuASoYC4Wf+OUYxz6mQkgwAAN9mIrUReCXgAAAABJRU5ErkJggg==) no-repeat center;
+}
+
+.login-btn {
+    width: 100%;
+    height: 45px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    background: #e50914;
+}
+
+.input-wrapper .txt {
+    text-align: center;
+    color: #9c9c9c;
+    font-size: 14px;
+}
+
+
+.input-wrapper .txt a {
+    color: #fae00f;
+    text-decoration: underline;
+}
+
+.login-flex-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.login-flex-button button {
+    width: 98%;
+    border-radius: 5px;
+    height: 40px;
+    color: #cecece;
+    background: #333333;
+    font-weight: 600;
+}
+

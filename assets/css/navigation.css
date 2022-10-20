@@ -1,0 +1,122 @@
+body {
+    background: #000000!important;
+}
+.navigation {
+    position: relative;
+    height: 50px;
+    border-bottom: 1px solid #e00a15;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    color: #fff;
+    font-size: 25px;
+}
+
+.navigation .menu {
+    color: #e00a15;
+}
+
+.navigation .user {
+    border:1px solid #b5b5b5;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.navigation .brand  {
+    display: flex;
+    align-items: center;
+}
+
+.navigation .brand img {
+    height: 29px;
+}
+
+.basic-user-information {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-bottom: 1px solid #3a3a3a;
+    height: 50px;
+    padding: 0px 20px;
+    font-size: 14px;
+}
+
+.basic-user-information .icon-with-info {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.basic-user-information .icon-with-info  i {
+    margin-right: 5px;
+
+    font-size: 16px;
+}
+
+.basic-user-information  .level {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.basic-user-information  img {
+    width: 20px;
+}
+
+.balance-information-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #b5b5b5;
+    padding: 10px 0px;
+}
+
+.balance-information-section .balance-block {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.balance-information-section .balance-block:first-child {
+    border-right: 1px solid #3a3a3a;
+}
+
+.one-notice {
+    color: #b5b5b5;
+    font-size: 12px;
+    padding: 0 10px;
+    background: #242424;
+    font-weight: 600;
+}
+
+.one-notice .notice-cont {
+    overflow: hidden;
+}
+
+.one-notice .notice {
+    width: 30px;
+    line-height: 39px;
+    display: inline-block;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 12px;
+    text-align: center;
+}
+.one-notice marquee {
+    width: calc( 100% - 35px );
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 12px;
+    z-index: 0;
+}

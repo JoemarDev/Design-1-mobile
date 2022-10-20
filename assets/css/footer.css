@@ -1,0 +1,52 @@
+.page-footer {
+    height: 180px;
+    text-align: center;
+    color: rgba(255,255,255,0.3);
+    font-size: 12px;
+    line-height: 18px;
+    text-shadow: 1px 1px #000;
+    padding-bottom: 20px;
+    background: #000;
+    border-top: 1px solid #e50914;
+}
+
+.page-footer .gray-logo {
+    padding: 20px 0 15px;
+}
+
+.page-footer  img {
+    width: 106px;
+}
+
+.page-footer p {
+    color: #787878;
+}
+
+.page-footer .pc-view {
+    margin-top: 18px;
+}
+
+.page-footer .pc-view a {
+    width: 135px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    background: #353535;
+    border: 1px solid #4a4a4a;
+    border-radius: 9px;
+    display: block;
+    margin: auto;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page-footer .pc-view a i {
+    font-size: 20px;
+    margin-right: 5px;
+}

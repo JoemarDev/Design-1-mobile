@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casin Page</title>
+    <link rel="stylesheet" href="../assets/css/iconfont.css">
+    <link rel="stylesheet" href="../assets/icofont/icofont.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/pages/transaction.css">
+    <link rel="stylesheet" href="../assets/css/pagination.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Section -->
+        <nav class="navigation">
+            <div class="menu">
+                <i class="icofont-navigation-menu"></i>
+            </div>
+            <div class="brand" onclick="window.location='home.html'">
+                <img src="../assets/images/logo/logo.png" alt="">
+            </div>
+            <div class="user">
+                <i class="icofont-ui-user"></i>
+            </div>
+        </nav>
+        <!-- Navigation Section -->
+
+        <!-- Basic Information Section -->
+        <section class="basic-user-information">
+            <div class="level">
+                <img src="../assets/images/level/1.png" alt="">
+            </div>
+            <div class="icon-with-info">
+                <span>strongtest  님,</span>
+            </div>
+            <div class="icon-with-info">
+                <i class="iconfont fz24"></i>
+                <span>쪽지</span>
+            </div>
+            <div class="icon-with-info">
+                <i class="iconfont fz22"></i>
+                <span>복권(0)</span>
+            </div>
+            <div class="icon-with-info">
+                <i class="iconfont fz22"></i>
+                <span>출석부</span>
+            </div>
+           
+        </section>
+        <!-- Basic Information Section -->
+
+        <!-- Balance Information Section -->
+        <section class="balance-information-section">
+            <div class="balance-block">
+                <i class="iconfont fz20"></i>
+                머니 : 
+                <span class="c-yellow money_view01">0</span>
+                Won
+            </div>
+            <div class="balance-block">
+                <i class="iconfont fz19"></i>
+                포인트 : 
+                <span class="c-white">0</span>
+                P
+            </div>
+        </section>
+        <!-- Balance Information Section -->
+
+        <!-- One Notice Section -->
+        <div class="one-notice">
+            <div class="notice-cont">
+                <span class="notice">
+                    <span class="iconfont"></span>
+                </span>
+                <marquee scrollamount="3" onmouseover="this.stop()" onmouseout="this.start()">★★★최신주소 확인은 베팅룸주소.com ★★★ 입금계좌가 변경 되었습니다. 입금전 고객센터로 새 입금계좌 문의해 주시기 바랍니다.</marquee>
+            </div>
+        </div>
+        <!-- One Notice Section -->
+
+        <!-- Page Content -->
+        <div class="transaction-tabs">
+            <div class="transaction-child-tabs active" onclick="window.location='cash-in.html'">충전신청</div>
+            <div class="transaction-child-tabs" onclick="window.location='cash-out.html'">환전신청</div>
+            <div class="transaction-child-tabs">포인트전환</div>
+        </div>
+
+        <div class="transaction-wrapper">
+
+            <!-- Transaction Help Box -->
+            <div class="transaction-box">
+                <h3>입금방법</h3>
+                <ul>
+                    <li>
+                        <span>◎</span>
+                        <span> 입금하실 때에는 인터넷뱅킹, 폰뱅킹, 무통장 입금, ATM이체등의 방법을 이용하여 입금이 가능합니다.</span>
+                    </li>
+                    <li>
+                        <span>◎</span>
+                        <span> 입금계좌는 수시로 변경될 수 있으니 필히 고객센터를 통해 문의해 주시기 바랍니다.</span>
+                    </li>
+                    <li>
+                        <span>◎</span>
+                        <span> 고객센터를 통하여 입금계좌정보를 확인후 충전금액을 정확히 입력해주시고 충전신청 해주시기 바랍니다.</span>
+                    </li>
+                </ul>
+            </div>
+            <!-- Transaction Help Box -->
+
+            <!-- Transaction Help Box -->
+            <div class="transaction-box">
+                <h3>주의사항</h3>
+                <ul>
+                    <li>
+                        <span>◎</span>
+                        <span> 먼저 입금을 해주신 후 머니충전 신청을 해주셔야 빠른처리가 가능하며 머니충전 신청을 먼저하시면 취소처리 됩니다.</span>
+                        <p class="yellow"> (충전처리가 되지 않을경우 입금여부를 다시 확인후에 충전신청을 다시 해주시기 바랍니다.)</p>
+                    </li>
+                    <li>
+                        <span>◎</span>
+                        <span> 본인성함이 아닌경우 충전처리가 불가능하오니 필히 본인성함으로 입금해 주시기 바랍니다.</span>
+                        <p class="red">(본인성함으로 입금하지 않을 시 충전처리는 불가능 합니다.)</p>
+                    </li>
+                  
+                </ul>
+            </div>
+            <!-- Transaction Help Box -->
+
+            <!-- Transaction Box -->
+            <div class="transaction-box">
+                <div class="transaction-inner-section">
+                    <p class="title">보유머니</p>
+                    <p class="value"><strong class="yellow">0</strong> 원</p>
+                </div>
+                <div class="transaction-inner-section">
+                    <p class="title">입금계좌</p>
+                    <p class="value">
+                        <button type="button"  value="계좌문의" id="newAccount"><i class="iconfont"></i> 간편계좌문의</button>
+                    </p>
+                    <p class="red">*입금하시기 전에 반드시 계좌문의를 해주세요.</p>
+                </div>
+                <div class="transaction-inner-section">
+                    <p class="title">충전금액</p>
+                    <div class="child-flex">
+                        <label class="input-tras-wrapper"><input type="text" id="IC_Amount" placeholder="0"> 원</label>
+                        <button type="button" class="trans-button default" name="revise" >정정</button>
+                    </div>
+                    <div class="child-flex">
+                        <button type="button" class="trans-button " name="revise" >1천원</button>
+                        <button type="button" class="trans-button " name="revise" >1만원</button>
+                        <button type="button" class="trans-button " name="revise" >3만원</button>
+                    </div>
+                    <div class="child-flex">
+                        <button type="button" class="trans-button " name="revise" >5만원</button>
+                        <button type="button" class="trans-button " name="revise" >30만원</button>
+                        <button type="button" class="trans-button " name="revise" >50만원</button>
+                    </div>
+                    <div class="child-flex">
+                        <button type="button" class="trans-button " name="revise" >100만원 </button>
+                    </div>
+                    <p class="gray help">※ 신청 전 반드시 입금액과 충전 신청 금액이 일치하는지 확인 하시기 바랍니다. 일치하지 않은 경우 처리가 지연될 수 있으며, 상습적인 금액 미일치 건은 악용으로 간주하여 전액 몰수 처리됩니다.</p>
+                </div>
+
+                <div class="transaction-inner-section">
+                    <p class="title">충전타입</p>
+                    <div class="child-flex">
+                        <button type="button" class="trans-button secondary" name="revise" >가입첫충30%</button>
+                        <button type="button" class="trans-button secondary" name="revise" >입금플러스</button>
+                        <button type="button" class="trans-button secondary" name="revise" >보너스안받기</button>
+                    </div>
+                </div>
+                <div class="transaction-inner-section">
+                    <p class="title">입금자명</p>
+                    <div class="child-flex">
+                        <input type="text" id="IC_Amount_2" placeholder="0">
+                    </div>
+                    <p class="gray help">* 입금자 이름이 틀리면 입금확인 을 할 수가 없으니 주의하세요!</p>
+                </div>
+
+            </div>
+            <!-- Transaction Box -->
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button class="submit-deposit">
+                    <i class="iconfont"></i>
+                    충전신청
+                </button>
+            </div>
+            <!-- Submit Button -->
+            <!-- Transaction Box -->
+            <div class="transaction-box">
+                <div class="transaction-inner-section" style="border: none;">
+                    <p class="title m-0">충전내역 </p>
+                    <span class="help gray">최근 30일 동안 내역만 확인 가능합니다.</span>
+                </div>
+
+                <table class="trans-history-table">
+                    <thead>
+                        <tr>
+                            <th>선택</th>
+                            <th>충전금액</th>
+                            <th>입금자명</th>
+                            <th>신청일자</th>
+                            <th>처리시간</th>
+                            <th>상태</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+
+            <ul class="pagination">
+                <li><img src="../assets/images/pagination/prev.png" alt=""></li>
+                <li><img src="../assets/images/pagination/next.png" alt=""></li>
+            </ul>
+
+            <div class="child-flex flex-end">
+                <button type="button" class="trans-button history-btn" >전체선택 </button>
+                <button type="button" class="trans-button history-btn red" >선택삭제 </button>
+            </div>
+
+
+
+
+        </div>
+        <!-- Page Content -->
+        
+        
+        
+
+
+        <footer>
+            <div class="page-footer">
+                <div class="gray-logo">
+                    <img src="../assets/images/logo/footer_logo.png" alt="">
+                </div>
+                <p>
+                    Copyright 베팅룸. 
+                    <br>
+                    All rights reserved. Since 2014
+                </p>
+                <div class="pc-view">
+                    <a href="#"><i class="icofont-computer"></i>pc 버전</a>
+                </div>
+
+                
+            </div>
+        </footer>
+
+    </div>
+   
+</body>
+<script src="../assets/js/script.js"></script>
+</html>
