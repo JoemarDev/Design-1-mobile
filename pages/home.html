@@ -11,18 +11,21 @@
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" href="../assets/css/pages/home.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+
+    <link rel="stylesheet" href="../assets/css/left-sidebar.css">
+    <link rel="stylesheet" href="../assets/css/right-sidebar.css">
 </head>
 <body>
     <div class="container">
         <!-- Navigation Section -->
         <nav class="navigation">
-            <div class="menu">
+            <div class="menu" onclick="OpenLeftSideBar()">
                 <i class="icofont-navigation-menu"></i>
             </div>
             <div class="brand" onclick="window.location='home.html'">
                 <img src="../assets/images/logo/logo.png" alt="">
             </div>
-            <div class="user">
+            <div class="user" onclick="OpenRightSideBar()">
                 <i class="icofont-ui-user"></i>
             </div>
         </nav>
@@ -30,8 +33,8 @@
 
         <!-- Basic Information Section -->
         <section class="basic-user-information">
-            <div class="level">
-                <img src="../assets/images/level/1.png" alt="">
+            <div class="level yellow">
+                LV 1
             </div>
             <div class="icon-with-info">
                 <span>strongtest  님,</span>
@@ -40,13 +43,13 @@
                 <i class="iconfont fz24"></i>
                 <span>쪽지</span>
             </div>
-            <div class="icon-with-info">
-                <i class="iconfont fz22"></i>
-                <span>복권(0)</span>
-            </div>
-            <div class="icon-with-info">
-                <i class="iconfont fz22"></i>
-                <span>출석부</span>
+
+            <div class="icon-with-info" style="margin-left: auto">
+                <i class="iconfont fz20"></i>
+                머니 : &nbsp;
+                <span class=" yellow">5,000,000</span>
+                &nbsp;
+                ₩
             </div>
            
         </section>
@@ -57,13 +60,13 @@
             <div class="balance-block">
                 <i class="iconfont fz20"></i>
                 머니 : 
-                <span class="c-yellow money_view01">0</span>
-                Won
+                <span class="yellow">0</span>
+                ₩
             </div>
             <div class="balance-block">
                 <i class="iconfont fz19"></i>
                 포인트 : 
-                <span class="c-white">0</span>
+                <span class="yellow">0</span>
                 P
             </div>
         </section>
@@ -117,11 +120,6 @@
                 <div class="gray-logo">
                     <img src="../assets/images/logo/footer_logo.png" alt="">
                 </div>
-                <p>
-                    Copyright 베팅룸. 
-                    <br>
-                    All rights reserved. Since 2014
-                </p>
                 <div class="pc-view">
                     <a href="#"><i class="icofont-computer"></i>pc 버전</a>
                 </div>
@@ -131,7 +129,254 @@
         </footer>
 
     </div>
-   
+
+
+
+    <!-- Section Left Side Bar -->
+    <section class="left-sidebar">
+        <div class="container">
+
+            <!-- left Sidebar Header -->
+            <div class="left-sidebar-header">
+                <div class="sidebar-brand">
+                    <img src="../assets/images/logo/logo.png" alt="">
+                </div>
+                <button class="close-left-sidebar" onclick="CloseLeftSideBar()">
+                    <span class="iconfont"></span>
+                </button>
+            </div>
+            <!-- left Sidebar Header -->
+
+            <div class="left-sidebar-content">
+                <div class="left-side-menu">
+                    <div class="left-side ">
+                        <div class="left-menu active" onclick="OpenMenuChild(1)">
+                            <span>카지노</span>
+                        </div>
+                        <div class="left-menu" onclick="OpenMenuChild(2)">
+                            <span>슬롯게임</span>
+                        </div>
+                        <div class="left-menu" onclick="OpenMenuChild(3)">
+                            <span>미니게임</span>
+                        </div>
+                        <div class="left-menu" onclick="OpenMenuChild(4)">
+                            <span>스포츠</span>
+                        </div>
+                        <div class="left-menu" onclick="OpenMenuChild(5)">
+                            <span>베팅내역</span>
+                        </div>
+                        <div class="left-menu">
+                            <span>고객센터</span>
+                        </div>
+                    </div>
+                    <div class="right-side">
+
+                        <!-- Menu Block -->
+                        <div class="menu-one menu-block" style="display: block;">
+                            <div class="menu-block-header">
+                                <span class="yellow">카지노</span>
+                                <span class="iconfont"></span>
+                            </div>
+                            <p class="link">에볼루션</p>
+                            <p class="link">드림게이밍</p>
+                            <p class="link">WM 카지노</p>
+                            <p class="link">아시아게이밍</p>
+                        </div>
+
+                        <!-- Menu Block -->
+                        <div class="menu-two menu-block">
+                            <div class="menu-block-header">
+                                <span class="yellow">카지노</span>
+                                <span class="iconfont"></span>
+                            </div>
+                            <p class="link">프라그메틱 슬롯</p>
+                            <p class="link">씨큐나인</p>
+                            <p class="link">레드타이거</p>
+                            <p class="link">부운고</p>
+                            <p class="link">에보플레이</p>
+                            <p class="link">하바네로</p>
+                        </div>
+
+                        <!-- Menu Block -->
+                        <div class="menu-three menu-block">
+                            <div class="menu-block-header">
+                                <span class="yellow">스코어플러스</span>
+                                <span class="iconfont"></span>
+                            </div>
+                            <p class="link">3분 파워볼</p>
+                            <p class="link">3분 사다리</p>
+                            <p class="link">5분 파워볼</p>
+                            <p class="link">5분 사다리</p>
+
+                            <div class="menu-block-header">
+                                <span class="yellow">벳이스트</span>
+                                <span class="iconfont"></span>
+                            </div>
+                            <p class="link">축구</p>
+                            <p class="link">야구</p>
+                            <p class="link">농구</p>
+                            <p class="link">크리켓</p>
+                            <p class="link">주사위</p>
+
+                            <div class="menu-block-header">
+                                <span class="yellow">미니게임</span>
+                                <span class="iconfont"></span>
+                            </div>
+                            <p class="link">강원랜드</p>
+                            <p class="link">라스베가스</p>
+                            <p class="link">마리오레이싱</p>
+                            <p class="link">붐붐붐사다리</p>
+                            <p class="link">오야봉섯다</p>
+
+                            
+                            <div class="menu-block-header">
+                                <span class="yellow">토큰바카라</span>
+                                <span class="iconfont"></span>
+                            </div>
+                            <p class="link">토큰바카라</p>
+                            <p class="link">토큰하이로우</p>
+                            <p class="link">-준비중-</p>
+
+
+                        </div>
+
+                        
+                        <!-- Menu Block -->
+                        <div class="menu-four menu-block">
+                            <div class="menu-block-header">
+                                <span class="yellow">스포츠</span>
+                                <span class="iconfont"></span>
+                            </div>
+                            <p class="link">축구</p>
+                            <p class="link">야구</p>
+                            <p class="link">농구</p>
+                            <p class="link">배구</p>
+                            <p class="link">아이스 하키</p>
+                            <p class="link">기타</p>
+                        </div>
+
+                        <!-- Menu Block -->
+                        <div class="menu-five menu-block">
+                            <div class="menu-block-header">
+                                <span class="yellow">베팅내역</span>
+                                <span class="iconfont"></span>
+                            </div>
+                            <p class="link">조합배팅(582)</p>
+                            <p class="link">스페셜(38)</p>
+                            <p class="link">실시간(18)</p>
+                        </div>
+ 
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section Right Side Bar -->
+    <section class="right-sidebar">
+
+        <div class="container">
+            <!-- Right Sidebar Header -->
+            <div class="right-sidebar-header">
+                <div class="sidebar-brand">
+                    <span class="yellow">LV 1</span>
+                    <span>strongtest</span>
+                    <span> 님</span>
+                </div>
+                <button class="close-right-sidebar" onclick="CloseRightSideBar()">
+                    <span class="iconfont"></span>
+                </button>
+            </div>
+            <!-- Right Sidebar Header -->
+
+            <!-- User Balance Section -->
+            <div class="right-sidebar-user-balance">
+                <div class="sidebar-balance-section">
+                    <div class="main-balance-block">
+                        <span>포인트</span>
+                        <label class="yellow main-balance">500,000 원</label>
+                        <span>보유포인트 : &nbsp; <span class="yellow"> 0 P</span></span>
+                    </div>
+                </div>
+                <div class="sidebar-balance-section">
+                    <div class="balance-block">
+                        <span>보유머니 :</span>
+                        <span>
+                            <span class="yellow">100,000 </span>
+                            <span>통</span>
+                        </span>
+                    </div>
+                    <div class="balance-block">
+                        <span>카지노머니 :</span>
+                        <span>
+                            <span class="yellow">174,000</span>
+                            <span>통</span>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- User Balance Section -->
+
+            <!-- User Menu Section -->
+            <div class="right-sidebar-menu">
+                <div class="right-menu-block">
+                    <i class="iconfont"></i>
+                    <span>충전신청</span>
+                </div>
+                <div class="right-menu-block">
+                    <i class="iconfont"></i>
+                    <span>환전신청</span>
+                </div>
+                <div class="right-menu-block">
+                    <i class="iconfont"></i>
+                    <span>포인트전환</span>
+                </div>
+                <div class="right-menu-block">
+                    <i class="iconfont"></i>
+                    <span>빠른계좌문의</span>
+                </div>
+                <div class="right-menu-block">
+                    <i class="iconfont"></i>
+                    <span>출석부</span>
+                </div>
+                <div class="right-menu-block">
+                    <i class="iconfont"></i>
+                    <span>고객센터</span>
+                </div>
+                <div class="right-menu-block">
+                    <i class="iconfont"></i>
+                    <span>지인현황</span>
+                </div>
+            </div>
+            <!-- User Menu Section -->
+
+            <div class="right-sidebar-menu-block">
+                <div class="menu-block-2">
+                    <i class="iconfont fz23"></i>
+                    <span>베팅내역</span>
+                </div>
+                <div class="menu-block-2">
+                    <i class="iconfont fz21"></i>
+                    <span>게시판</span>
+                </div>
+                <div class="menu-block-2">
+                    <i class="iconfont"></i>
+                    <span>환전 비밀번호 변경</span>
+                </div>
+            </div>
+
+            <button class="app-button logout" style="margin-top : 10px">
+                <div class="inner-wrapper">
+                    로그아웃
+                </div>
+            </button>
+        </div>
+
+    </section>
 </body>
+<script src="../assets/js/jquery-3.6.1.min.js"></script>
 <script src="../assets/js/script.js"></script>
 </html>

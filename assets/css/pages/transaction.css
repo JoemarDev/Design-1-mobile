@@ -2,17 +2,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
 }
 
 .transaction-tabs .transaction-child-tabs.active {
     width: 100%;
-    background: #000;
     color: #fff;
-    border-top: 2px solid #e00a15;
-    border-right: 1px solid #e00a15;
-    border-left: 1px solid #e00a15;
-    border-bottom: 1px solid #000;
+    background: linear-gradient(#f5b436, #221c14);
 }
+
+.transaction-tabs .transaction-child-tabs:hover {
+    background: linear-gradient(#f5b436, #221c14);
+    color: #fff;
+}
+
 
 .transaction-tabs .transaction-child-tabs {
     text-align: center;
@@ -22,13 +26,21 @@
     display: block;
     height: 40px;
     font-size: 13px;
-    color: #fff;
-    background: #212121;
-    border-top: 1px solid #404040;
+    color: #222;
     line-height: 40px;
-    border-right: 1px solid #404040;
-    border-bottom: 1px solid #e00a15;
-  
+    background: linear-gradient(#fff, #dadbdc);
+}
+
+.transaction-tabs .transaction-child-tabs:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+
+.transaction-tabs .transaction-child-tabs:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
 }
 
 .transaction-wrapper {
@@ -36,13 +48,16 @@
 }
 
 .transaction-box {
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #56575f;
+    background: #221c14;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
-    padding: 20px 10px 15px;
-
+    padding: 20px;
     border: 1px solid #393a3d;
-    background: #0f0f10;
     margin-bottom: 10px;
 }
 
@@ -105,27 +120,36 @@
 
 
 .trans-button {
+    width: 100%;
+    margin-bottom: 10px;
     height: 40px;
-    line-height: 40px;
-    padding: 0;
-    margin: 5px 0 0 5px;
-    background: linear-gradient(to left,#d8d8d8,#fbfbfb);
-    border: 0;
-    border-radius: 5px;
-    color: #0f0f10;
-    font-size: 15px;
-    font-weight: 600;
-    width: 33%;
+    margin-right: 5px;
+    background: #008000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 6px;
+    box-shadow: 2px 2px 1px #063606;
+    border: none;
+    cursor: pointer;
 
 }
 
 .trans-button:first-child {
     margin-left: 0;
+
+}
+
+.reset {
+    background: #b63b20;
+    max-width: 32%;
 }
 
 .default {
     background: linear-gradient(#838383,#4b4b4b);
     color: #fff;
+    
 }
 
 
@@ -147,6 +171,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 10px;
 }
 
 #IC_Amount {
@@ -183,42 +208,67 @@
 }
 
 .submit-deposit {
-    width: 130px;
-    height: 45px;
-    line-height: 45px;
-    margin: 10px auto;
-    padding: 0;
+    width: 184px;
+    height: 40px;
+    text-align: center;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 700;
     color: #fff;
-    background: #e00a15;
-    border: 0;
-    border-radius: 5px;
+    background: #03a9f4;
+    border-radius: 33px;
+    box-shadow: 3px 3px 1px #0c2e3d;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 
 }
 
 
-.submit-withdrawal {
-    width: 130px;
-    height: 45px;
-    line-height: 45px;
-    margin: 10px auto;
-    padding: 0;
-    font-size: 16px;
+.submit-deposit i {
     font-weight: 300;
-    color: #fff;
-    background: #0f49d1;
-    border: 0;
-    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 10px;
+}
 
+.submit-withdrawal {
+    width: 184px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #b63b20;
+    box-shadow: 3px 3px 0px #da5537;
+    border-radius: 33px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+}
+
+
+.submit-withdrawal i {
+    font-weight: 300;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 
 .trans-history-table {
     width: 100%;
-    background: #333;
-    padding: 3px;
+    border-collapse: collapse;
     font-size: 12px;
+    border-top: 2px solid #996806;
+}
+
+.trans-history-table  th {
+    background: #333;
+    padding: 10px 3px;
 }
 
 .history-btn {

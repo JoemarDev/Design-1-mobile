@@ -4,7 +4,7 @@ body {
 .navigation {
     position: relative;
     height: 50px;
-    border-bottom: 1px solid #e00a15;
+    border-bottom: 1px solid #996806;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -12,14 +12,16 @@ body {
     padding: 0px 10px;
     color: #fff;
     font-size: 25px;
+    background: #221c14;
 }
 
 .navigation .menu {
-    color: #e00a15;
+    color: #ffd989;
 }
 
 .navigation .user {
-    border:1px solid #b5b5b5;
+    border:1px solid #ffd989;
+    color: #ffd989;
     border-radius: 100%;
     width: 30px;
     height: 30px;
@@ -95,7 +97,7 @@ body {
     color: #b5b5b5;
     font-size: 12px;
     padding: 0 10px;
-    background: #242424;
+    background: #221c14;
     font-weight: 600;
 }
 
