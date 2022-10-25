@@ -36,6 +36,11 @@ button {
     margin: 0!important;
 }
 
+.px-3 {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -156,6 +161,15 @@ input:focus {
     justify-content: start!important
 }
 
+.justify-between {
+    justify-content: space-between;
+}
+
+
+.my-2 {
+    margin-top: 0.2rem!important;
+    margin-bottom: 0.2rem!important;
+}
 
 
 .app-button {
@@ -191,3 +205,91 @@ input:focus {
 .logout .inner-wrapper {
     background-image: linear-gradient(#af300c, #bb432e);
 }
+
+.banner {
+    position: relative;
+    top: 30%;
+    z-index: -1;
+    margin-bottom: -30%;
+}
+
+
+.banner img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.app-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.app-tabs .app-child-tabs.active {
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(#f5b436, #221c14);
+}
+
+.app-tabs .app-child-tabs:hover {
+    background: linear-gradient(#f5b436, #221c14);
+    color: #fff;
+}
+
+
+.app-tabs .app-child-tabs {
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    position: relative;
+    display: block;
+    height: 40px;
+    font-size: 13px;
+    color: #222;
+    line-height: 40px;
+    background: linear-gradient(#fff, #dadbdc);
+}
+
+
+
+.app-lists-slide {
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x:scroll;
+    margin: 5px 0px;
+    background: #221c14;
+}
+
+.app-lists-slide ul {
+    white-space: nowrap;
+}
+
+.app-lists-slide li {
+    display: inline-block;
+
+    max-width: 100px;
+    text-align: center;
+    padding: 10px 20px;
+    color: #fff;
+    border-right:1px solid #99680627;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+}
+
+.app-lists-slide li.active {
+    color: #ffd989;
+}
+
+.elip-content {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 50vw;
+}
+
+

@@ -48,6 +48,7 @@ body {
     height: 50px;
     padding: 0px 20px;
     font-size: 14px;
+    background: #000000b3;
 }
 
 .basic-user-information .icon-with-info {
@@ -80,6 +81,7 @@ body {
     justify-content: center;
     color: #b5b5b5;
     padding: 10px 0px;
+    background: #000000b3;
 }
 
 .balance-information-section .balance-block {

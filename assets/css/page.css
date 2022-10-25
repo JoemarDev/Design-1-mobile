@@ -1,0 +1,43 @@
+.page-memo {
+    background: #221c14;
+
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+.page-memo-content {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.page-memo-content:last-child {
+    margin: 0;
+}
+
+
+.page-memo-content img {
+    margin-right: 5px;
+    width: 12px;
+}
+
+
+.page-memo-content label {
+    cursor: pointer;
+}
+
+.page-title-banner {
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-bottom: 1px solid #2c2f31;
+    font-size: 16px;
+    font-weight: 900;
+    color: #000000bf;
+    background: linear-gradient(#cf9113, #ffbd3f);
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
