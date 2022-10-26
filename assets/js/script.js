@@ -1,4 +1,4 @@
-
+let type =  "show";
 const OpenMenuChild = (val) => {
 
     $('.menu-block').hide();
@@ -48,3 +48,102 @@ const OpenRightSideBar = () => {
 const CloseRightSideBar = () => {
     $('.right-sidebar').css('right' , '-100%')
 }
+
+const OpenMobileCart = () => {
+    $('.money-cart').css('bottom' , 0);
+}
+
+const CloseMobileCart = () => {
+    $('.money-cart').css('bottom' , '-100%');
+}
+
+
+const BaccaratShowResult =  () =>  {
+    if(type == "unshow") {
+        $('.frame-wrapper').css('aspect-ratio'  , '11.7 / 11')
+        return type = "show";
+    }
+    
+    if(type == "show") {
+        $('.frame-wrapper').css('aspect-ratio'  , '6.1 / 11')
+        return type = "unshow";
+    }
+}
+
+const BoomShowResult  = () => {
+    if(type == "unshow") {
+        $('.frame-wrapper').css('aspect-ratio'  , '10.18 / 11')
+        return type = "show";
+    }
+    
+    if(type == "show") {
+        $('.frame-wrapper').css('aspect-ratio'  , '7.7 / 11')
+        return type = "unshow";
+    }
+}
+
+const MarioShowResult  = () => {
+    if(type == "unshow") {
+        $('.frame-wrapper').css('aspect-ratio'  , '12.15 / 11')
+        return type = "show";
+    }
+    
+    if(type == "show") {
+        $('.frame-wrapper').css('aspect-ratio'  , '8.7 / 11')
+        return type = "unshow";
+    }
+}
+
+const OhmygoshResult = () => {
+    if(type == "unshow") {
+        $('.frame-wrapper').css('aspect-ratio'  , '15 / 11')
+        return type = "show";
+    }
+    
+    if(type == "show") {
+        $('.frame-wrapper').css('aspect-ratio'  , '9.53 / 11')
+        return type = "unshow";
+    }
+}
+
+
+
+const HandleHistoryButton = () => {
+    $('.history-wrapper').toggle();
+    let frame2 = $('.result-frame');
+    let frame2W = frame2.width();
+    let frame2H = frame2.height();
+    let parent2 = frame2.parent()[0].offsetWidth;
+    let config2 = parent2 / frame2W;
+
+    frame2.css('transform' ,`scale(${config2})`)
+}
+
+const HandleGameResize = () => {
+    let frame = $('.main-frame');
+    let frameW = frame.width();
+    let frameH = frame.height();
+    let parent = frame.parent()[0].offsetWidth;
+    let config = parent / frameW;
+
+    frame.css('transform' ,`scale(${config})`)
+    console.log($('.result-frame').parent())
+    if($('.result-frame').parent().length  > 0)  {
+
+        let frame2 = $('.result-frame');
+        let frame2W = frame2.width();
+        let frame2H = frame2.height();
+        let parent2 = frame2.parent()[0].offsetWidth;
+        let config2 = parent2 / frame2W;
+
+        frame2.css('transform' ,`scale(${config2})`)
+
+    }
+}
+
+
+HandleGameResize();
+
+$(window).resize(() => {
+    HandleGameResize();
+})  

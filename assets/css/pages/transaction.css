@@ -17,6 +17,11 @@
     margin-bottom: 10px;
 }
 
+.transaction-box td {
+    padding: 5px 0px;
+    font-size: 10px;
+}
+
 .transaction-box h3 {
     margin: 0 0 10px;
     font-weight: 600;

@@ -1,0 +1,200 @@
+.game-view-lists-button-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px
+}
+
+.game-view-lists-button-header button {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    font-weight: 300;
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #191923;
+    background: linear-gradient(#fff, #dadbdc);
+    border-left: 1px solid #b8bcc4;
+}
+
+.game-view-lists-button-header button.active {
+    background: linear-gradient(#f5b436, #221c14);
+    color: #fff;
+}
+
+.game-view-lists-button-header button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-left: none;
+}
+
+.game-view-lists-button-header button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+
+.game-view-lists-button-header button:hover {
+    background: linear-gradient(#f5b436, #221c14);
+    color: #fff;
+}
+
+
+.view-game-header {
+    background: #3a3b42;
+    height: 90px;
+    margin-top: 0;
+    padding: 0 20px;
+    overflow: hidden;
+
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.view-game-header  h2 {
+    font-size: 16px;
+}
+
+.view-game-header label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.view-game-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.view-game-body .left {
+    width: 70%;
+
+}
+
+.view-game-body .right {
+    width: 30%;
+    height: 350px;
+    position: sticky;
+    top: 5px;
+    border: 2px solid #996806;
+    background: #191923;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.game-frame-view {
+    transform: scale(0.870);
+    transform-origin: 0% 0%;
+    overflow: hidden;
+}
+
+.frame-wrapper:last-child .game-frame-view {
+    transform: scale(0.870);
+    transform-origin: -25% 0%;
+}
+
+.frame-wrapper {
+    overflow: hidden;
+}
+
+.betting-button-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.betting-button-flex button {
+    width: 100%;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+
+.betting-button-flex button:first-child {
+    background: #4f09b7;
+    box-shadow: 3px 3px 0px #6b2bcb;
+    border-radius: 17px
+}
+
+.betting-button-flex button:last-child {
+    background: #c73387;
+    box-shadow: 3px 3px 0px #931863;
+    border-radius: 17px;
+}
+
+.betting-button-flex div {
+    padding: 5px;
+    color: #fff;
+    width: 30%;
+    text-align: center;
+}
+
+.header-betting-button {
+    color: #fff;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.frame-wrapper {
+    aspect-ratio: 16 / 11;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+
+ 
+}
+
+
+.frame-wrapper iframe {
+    transform-origin: 0% 0%;
+}
+
+
+.betting-wrapper {
+    padding: 10px;
+    border-top : 1px solid #996806;
+    border-top : 1px solid #996806;
+    background: #221c14;
+}
+
+.betting-wrapper label {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 5px!important;
+    display: block;
+}
+
+.betting-button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 0px;
+}
+
+.betting-button button{
+    margin: 5px 0px!important;
+    font-size: 12px;
+}
+
+.betting-button span:first-child {
+    margin-right: 5px;
+}

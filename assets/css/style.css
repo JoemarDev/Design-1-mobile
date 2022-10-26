@@ -36,6 +36,11 @@ button {
     margin: 0!important;
 }
 
+.my-4 {
+    margin-top: 0.8rem!important;
+    margin-bottom: 0.8rem!important;
+}
+
 .px-3 {
     padding-left: 0.3rem;
     padding-right: 0.3rem;
@@ -189,7 +194,6 @@ input:focus {
     align-items: center;
     justify-content: center;
     padding: 5px 0px;
-    background-image: linear-gradient(#af300c, #bb432e);
     border: solid 1px #222;
     width: 100%;
     border-radius: 5px;
@@ -204,6 +208,44 @@ input:focus {
 
 .logout .inner-wrapper {
     background-image: linear-gradient(#af300c, #bb432e);
+}
+
+.red-button {
+    border: solid 1px #d85c38;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.red-button .inner-wrapper {
+    background-image: linear-gradient(#af300c, #bb432e);
+}
+
+
+.green-button {
+    border: solid 1px #008000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.green-button .inner-wrapper {
+    background-image: linear-gradient(#094e09, #008000);
+}
+
+
+
+.blue-button {
+    border: solid 1px #0867b3;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.blue-button .inner-wrapper {
+    background-image: linear-gradient(#125489, #03a9f4);
 }
 
 .banner {
@@ -292,4 +334,10 @@ input:focus {
     max-width: 50vw;
 }
 
-
+.table-trunk {
+    max-width: 35vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
