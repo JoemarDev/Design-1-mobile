@@ -5,20 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Page</title>
+    <title>Casin Page</title>
     <link rel="stylesheet" href="../assets/css/iconfont.css">
     <link rel="stylesheet" href="../assets/icofont/icofont.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/pages/sports-betting-lists.css">
-    <link rel="stylesheet" href="../assets/css/pages/sports.css">
+    <link rel="stylesheet" href="../assets/css/pages/transaction.css">
     <link rel="stylesheet" href="../assets/css/pagination.css">
 
     <link rel="stylesheet" href="../assets/css/left-sidebar.css">
     <link rel="stylesheet" href="../assets/css/right-sidebar.css">
 
-    <link rel="stylesheet" href="../assets/css/page.css">
 </head>
 
 <body>
@@ -36,6 +34,7 @@
             </div>
         </nav>
         <!-- Navigation Section -->
+
 
         <!-- Basic Information Section -->
         <section class="basic-user-information">
@@ -95,295 +94,53 @@
 
 
         <!-- Page Content -->
-        <section class="page-wrapper px-3">
-            <!-- Betting History Config -->
-            <div class="betting-history-config">
-                <div class="child-flex">
-                    <select name="gtype">
-                        <option value="" selected="">전체</option>
-                        <option value="C">크로스</option>
-                        <option value="S">스페셜</option>
-                        <option value="L">실시간</option>
-                        <option value="Vgame">가상경기</option>
-                        <option value="inplay">인플레이</option>
-                    </select>
+        <div class="app-tabs">
+            <div class="app-child-tabs active" onclick="window.location='cash-in.html'">충전신청</div>
+            <div class="app-child-tabs" onclick="window.location='cash-out.html'">환전신청</div>
+            <div class="app-child-tabs" onclick="window.location='point-history.html'">포인트전환</div>
+        </div>
 
-                    <select name="btype">
-                        <option value="" selected="">전체종목</option>
-                        <option value="축구">축구</option>
-                        <option value="농구">농구</option>
-                        <option value="야구">야구</option>
-                        <option value="배구">배구</option>
-                        <option value="아이스하키">하키</option>
-                        <option value="기타">기타</option>
-                    </select>
+        <div class="transaction-wrapper">
 
-                    <select name="btype">
-                        <option value="sLeagueName">리그명</option>
-                        <option value="sHteam">홈팀명</option>
-                        <option value="sVteam">원정팀명</option>
-                    </select>
+         
+
+
+            <!-- Transaction Box -->
+            <div class="transaction-box">
+
+                <div class="transaction-inner-section">
+                    <p class="title">기존 비밀번호</p>
+                    <div class="child-flex">
+                        <input type="text" id="IC_Amount_2" placeholder="">
+                    </div>
                 </div>
-                <div class="child-flex">
-                    <input type="text" placeholder="검색어 입력하세요">
-                    <button>선택내역 첨부</button>
+                <div class="transaction-inner-section">
+                    <p class="title">새비밀번호</p>
+                    <div class="child-flex">
+                        <input type="text" id="IC_Amount_2" placeholder="">
+                    </div>
                 </div>
+                <div class="transaction-inner-section">
+                    <p class="title">새비밀번호확인</p>
+                    <div class="child-flex">
+                        <input type="text" id="IC_Amount_2" placeholder="">
+                    </div>
+                </div>
+
 
             </div>
-            <!-- Betting History Config -->
-
-
-            <!-- Table Showcase -->
-            <div class="table-showcase-flex-lists">
-                <div class="table-child-item" style="margin: 0; justify-content: center;">
-                    <div class="left-section">
-                        <span class="gray">승(홈/오버)</span>
-                    </div>
-                </div>
-                <div class="table-child-item" style="margin: 0; justify-content: center;">
-                    <div class="left-section">
-                        <span class="gray">무(기준)</span>
-                    </div>
-                </div>
-
-                <div class="table-child-item" style="margin: 0; justify-content: center;">
-                    <div class="left-section">
-                        <span class="gray">패(원정/언더)</span>
-                    </div>
-                </div>
+            <!-- Transaction Box -->
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button class="submit-deposit">
+                    확인
+                </button>
             </div>
-            <!-- Table Showcase -->
+            <!-- Submit Button -->
+        
 
-            <!-- Table Header Showcase -->
-            <div class="table-showcase-header-body justify-between">
-                <div class="header-flex-child">
-                    <img src="../assets/images/table-icons/1.png" alt="">
-                    <img src="../assets/images/table-icons/s-1.gif" alt="">
-                    <span class="yellow">KBO</span>
-                </div>
-                <div class="header-flex-child">
-                    <span class="date yellow">[23:29]</span>
-                </div>
-
-            </div>
-            <!-- Table Header Showcase -->
-
-            <!-- Table Showcase -->
-            <div class="table-showcase-flex-lists">
-                <div class="table-child-item flex-4">
-                    <div class="left-section"><span class="trunk-text">키움[1이닝 득점]</span></div>
-                    <div class="right-section ">
-                        2.00
-                    </div>
-                </div>
-
-                <div class="table-child-item flex-2 justify-center flex-1">
-                    <span class="yellow">VS</span>
-                </div>
-
-                <div class="table-child-item flex-4 active-bg">
-                    <div class="left-section">
-                        1.60
-                    </div>
-                    <div class="right-section "><span class="trunk-text">KT[1이닝 무득점]</span></div>
-                </div>
-                <div class="table-child-item justify-center ">
-                    <span class="white">원</span>
-                </div>
-            </div>
-            <!-- Table Showcase -->
-
-            <!-- Table Header Showcase -->
-            <div class="table-showcase-header-body justify-between">
-                <div class="header-flex-child">
-                    <img src="../assets/images/table-icons/2.png" alt="">
-                    <img src="../assets/images/table-icons/s-2.jpg" alt="">
-                    <span class="yellow">CBA</span>
-                </div>
-                <div class="header-flex-child">
-                    <span class="date yellow">[23:29]</span>
-                </div>
-
-            </div>
-            <!-- Table Header Showcase -->
-
-
-            <!-- Table Showcase -->
-            <div class="table-showcase-flex-lists">
-                <div class="table-child-item flex-4  active-bg">
-                    <div class="left-section"><span class="trunk-text">키움[1이닝 득점]</span></div>
-                    <div class="right-section ">
-                        2.00
-                    </div>
-                </div>
-
-                <div class="table-child-item flex-2 justify-center flex-1 ">
-                    <span class="yellow">VS</span>
-                </div>
-
-                <div class="table-child-item flex-4">
-                    <div class="left-section">
-                        1.60
-                    </div>
-                    <div class="right-section "><span class="trunk-text">KT[1이닝 무득점]</span></div>
-                </div>
-                <div class="table-child-item justify-center ">
-                    <span class="white">원</span>
-                </div>
-            </div>
-            <!-- Table Showcase -->
-
-
-            <!-- Table Showcase -->
-            <div class="table-showcase-flex-lists">
-                <div class="table-child-item flex-4">
-                    <div class="left-section"><span class="trunk-text">키움[1이닝 득점]</span></div>
-                    <div class="right-section ">
-                        2.00
-                    </div>
-                </div>
-
-                <div class="table-child-item flex-2 justify-center flex-1  ">
-                    <span class="yellow">VS</span>
-                </div>
-
-                <div class="table-child-item flex-4 active-bg">
-                    <div class="left-section">
-                        1.60
-                    </div>
-                    <div class="right-section "><span class="trunk-text">KT[1이닝 무득점]</span></div>
-                </div>
-                <div class="table-child-item justify-center ">
-                    <span class="white">원</span>
-                </div>
-            </div>
-            <!-- Table Showcase -->
-
-
-            <!-- Table Header Showcase -->
-            <div class="table-showcase-header-body justify-between">
-                <div class="header-flex-child">
-                    <img src="../assets/images/table-icons/1.png" alt="">
-                    <img src="../assets/images/table-icons/s-1.gif" alt="">
-                    <span class="yellow">KBO</span>
-                </div>
-                <div class="header-flex-child">
-                    <span class="date yellow">[23:29]</span>
-                </div>
-
-            </div>
-            <!-- Table Header Showcase -->
-
-            <!-- Table Showcase -->
-            <div class="table-showcase-flex-lists">
-                <div class="table-child-item flex-4">
-                    <div class="left-section"><span class="trunk-text">키움[1이닝 득점]</span></div>
-                    <div class="right-section ">
-                        2.00
-                    </div>
-                </div>
-
-                <div class="table-child-item flex-2 justify-center flex-1">
-                    <span class="yellow">VS</span>
-                </div>
-
-                <div class="table-child-item flex-4 active-bg">
-                    <div class="left-section">
-                        1.60
-                    </div>
-                    <div class="right-section "><span class="trunk-text">KT[1이닝 무득점]</span></div>
-                </div>
-                <div class="table-child-item justify-center ">
-                    <span class="white">원</span>
-                </div>
-            </div>
-            <!-- Table Showcase -->
-
-            <!-- Table Header Showcase -->
-            <div class="table-showcase-header-body justify-between">
-                <div class="header-flex-child">
-                    <img src="../assets/images/table-icons/2.png" alt="">
-                    <img src="../assets/images/table-icons/s-2.jpg" alt="">
-                    <span class="yellow">CBA</span>
-                </div>
-                <div class="header-flex-child">
-                    <span class="date yellow">[23:29]</span>
-                </div>
-
-            </div>
-            <!-- Table Header Showcase -->
-
-
-            <!-- Table Showcase -->
-            <div class="table-showcase-flex-lists">
-                <div class="table-child-item flex-4  active-bg">
-                    <div class="left-section"><span class="trunk-text">키움[1이닝 득점]</span></div>
-                    <div class="right-section ">
-                        2.00
-                    </div>
-                </div>
-
-                <div class="table-child-item flex-2 justify-center flex-1 ">
-                    <span class="yellow">VS</span>
-                </div>
-
-                <div class="table-child-item flex-4">
-                    <div class="left-section">
-                        1.60
-                    </div>
-                    <div class="right-section "><span class="trunk-text">KT[1이닝 무득점]</span></div>
-                </div>
-                <div class="table-child-item justify-center ">
-                    <span class="white">무</span>
-                </div>
-            </div>
-            <!-- Table Showcase -->
-
-
-            <!-- Table Showcase -->
-            <div class="table-showcase-flex-lists">
-                <div class="table-child-item flex-4">
-                    <div class="left-section"><span class="trunk-text">키움[1이닝 득점]</span></div>
-                    <div class="right-section ">
-                        2.00
-                    </div>
-                </div>
-
-                <div class="table-child-item flex-2 justify-center flex-1  ">
-                    <span class="yellow">VS</span>
-                </div>
-
-                <div class="table-child-item flex-4 active-bg">
-                    <div class="left-section">
-                        1.60
-                    </div>
-                    <div class="right-section "><span class="trunk-text">KT[1이닝 무득점]</span></div>
-                </div>
-                <div class="table-child-item justify-center ">
-                    <span class="white">무</span>
-                </div>
-            </div>
-            <!-- Table Showcase -->
-
-
-
-
-
-
-
-        </section>
-
-        <ul class="pagination" style="margin-top: 10px">
-            <li><img src="../assets/images/pagination/prev.png" alt=""></li>
-            <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
-            <li class="number active">1</li>
-            <li><img src="../assets/images/pagination/next-single.png" alt=""></li>
-            <li><img src="../assets/images/pagination/next.png" alt=""></li>
-        </ul>
-
-
+        </div>
         <!-- Page Content -->
-
 
 
         <footer>
@@ -406,6 +163,7 @@
 
     </div>
 
+
     <!-- Section Left Side Bar -->
     <section class="left-sidebar">
         <div class="container">
@@ -424,29 +182,29 @@
             <div class="left-sidebar-content">
                 <div class="left-side-menu">
                     <div class="left-side ">
-                        <div class="left-menu" onclick="OpenMenuChild(1)">
+                        <div class="left-menu active" onclick="OpenMenuChild(1)">
                             <span>카지노</span>
                         </div>
-                        <div class="left-menu " onclick="OpenMenuChild(2)">
+                        <div class="left-menu" onclick="OpenMenuChild(2)">
                             <span>슬롯게임</span>
                         </div>
-                        <div class="left-menu " onclick="OpenMenuChild(3)">
+                        <div class="left-menu" onclick="OpenMenuChild(3)">
                             <span>미니게임</span>
                         </div>
                         <div class="left-menu" onclick="OpenMenuChild(4)">
                             <span>스포츠</span>
                         </div>
-                        <div class="left-menu active" onclick="window.location='sports-betting-lists.html'">
+                        <div class="left-menu" onclick="window.location='sports-betting-lists.html'">
                             <span>베팅내역</span>
                         </div>
-                        <div class="left-menu " onclick="window.location='qna.html'">
+                        <div class="left-menu" onclick="window.location='qna.html'">
                             <span>고객센터</span>
                         </div>
                     </div>
                     <div class="right-side">
 
                         <!-- Menu Block -->
-                        <div class="menu-one menu-block">
+                        <div class="menu-one menu-block" style="display: block;">
                             <div class="menu-block-header" onclick="window.location='casino.html'">
                                 <span class="yellow">카지노</span>
                                 <span class="iconfont"></span>
@@ -536,7 +294,6 @@
 
         </div>
     </section>
-
 
     <!-- Section Right Side Bar -->
     <section class="right-sidebar">

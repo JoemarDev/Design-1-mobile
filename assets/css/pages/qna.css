@@ -60,26 +60,13 @@
 }
 
 .footer-button-qna {
-    padding: 10px;
+    padding: 0px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
 }
 
-.footer-button-qna button {
-    min-width: 114px;
-    height: 40px;
-    line-height: 40px;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    font-size: 14px;
-    border-radius: 5px;
-    padding: 0 15px;
-    border: none;
-    font-weight: 600;
-}
 
 .qna-delete {
     background: #3a3b42;
@@ -138,6 +125,7 @@
 }
 
 .qna-message-header-block {
+    font-size: 12px;
     display: flex;
     align-items: center;
     color: #fff;

@@ -12,7 +12,7 @@
     color: #fff;
     font-size: 14px;
     font-weight: 600;
-    padding: 20px;
+    padding: 20px 10px;
     border: 1px solid #393a3d;
     margin-bottom: 10px;
 }
@@ -20,6 +20,15 @@
 .transaction-box td {
     padding: 5px 0px;
     font-size: 10px;
+    height: 45px;
+    font-weight: 500;
+    color: #c1c1c1;
+    font-size: 12px;
+    border-bottom: 1px solid #3e3f46;
+    border-left: 0;
+    cursor: pointer;
+    background: transparent;
+    
 }
 
 .transaction-box h3 {

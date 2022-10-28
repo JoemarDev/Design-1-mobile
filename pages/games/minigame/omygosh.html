@@ -510,9 +510,13 @@
             <!-- Right Sidebar Header -->
             <div class="right-sidebar-header">
                 <div class="sidebar-brand">
-                    <span class="yellow">LV 1</span>
-                    <span>strongtest</span>
-                    <span> 님</span>
+                    <span class="yellow">LV.1</span>
+                    <span>홍길동</span>
+                    <span style="margin-right: 20px"> 님,</span>
+                    <span> <i class="iconfont fz24"></i></span>
+                    <span>쪽지</span>
+                    <span class="yellow"> 0</span>
+                    <span>건</span>
                 </div>
                 <button class="close-right-sidebar" onclick="CloseRightSideBar()">
                     <span class="iconfont"></span>
@@ -524,24 +528,24 @@
             <div class="right-sidebar-user-balance">
                 <div class="sidebar-balance-section">
                     <div class="main-balance-block">
-                        <span>포인트</span>
+                        <span>보유머니</span>
                         <label class="yellow main-balance">500,000 원</label>
-                        <span>보유포인트 : &nbsp; <span class="yellow"> 0 P</span></span>
                     </div>
                 </div>
                 <div class="sidebar-balance-section">
                     <div class="balance-block">
-                        <span>보유머니 :</span>
+                        <span>카지노머니 :</span>
                         <span>
                             <span class="yellow">100,000 </span>
-                            <span>통</span>
+                            <span>원</span>
                         </span>
                     </div>
                     <div class="balance-block">
-                        <span>카지노머니 :</span>
-                        <span>
+                        <span>포인트 :</span>
+                        <span style="display: flex; align-items:center;">
                             <span class="yellow">174,000</span>
-                            <span>통</span>
+                            <span>P</span>
+                            <span><img style="width: 20px" src="../../../assets/images/icons/change.png" alt=""></span>
                         </span>
                     </div>
                 </div>
@@ -551,49 +555,37 @@
 
             <!-- User Menu Section -->
             <div class="right-sidebar-menu">
-                <div class="right-menu-block">
+                <div class="right-menu-block" onclick="window.location='../../cash-in.html'">
                     <i class="iconfont"></i>
                     <span>충전신청</span>
                 </div>
-                <div class="right-menu-block">
+                <div class="right-menu-block" onclick="window.location='../../cash-out.html'">
                     <i class="iconfont"></i>
                     <span>환전신청</span>
                 </div>
-                <div class="right-menu-block">
+                <div class="right-menu-block" onclick="window.location='../../point-history.html'">
                     <i class="iconfont"></i>
-                    <span>포인트전환</span>
+                    <span>포인트전환내역</span>
                 </div>
-                <div class="right-menu-block">
+                <div class="right-menu-block" onclick="window.location='../../qna-writing.html'">
                     <i class="iconfont"></i>
                     <span>빠른계좌문의</span>
                 </div>
-                <div class="right-menu-block">
-                    <i class="iconfont"></i>
-                    <span>출석부</span>
-                </div>
-                <div class="right-menu-block">
+                <div class="right-menu-block" onclick="window.location='../../qna.html'">
                     <i class="iconfont"></i>
                     <span>고객센터</span>
-                </div>
-                <div class="right-menu-block">
-                    <i class="iconfont"></i>
-                    <span>지인현황</span>
                 </div>
             </div>
             <!-- User Menu Section -->
 
             <div class="right-sidebar-menu-block">
-                <div class="menu-block-2">
+                <div class="menu-block-2" onclick="window.location='../../sports-betting-lists.html'">
                     <i class="iconfont fz23"></i>
                     <span>베팅내역</span>
                 </div>
-                <div class="menu-block-2">
-                    <i class="iconfont fz21"></i>
-                    <span>게시판</span>
-                </div>
-                <div class="menu-block-2">
+                <div class="menu-block-2" onclick="window.location='../../mypage.html'">
                     <i class="iconfont"></i>
-                    <span>환전 비밀번호 변경</span>
+                    <span>마이페이지</span>
                 </div>
             </div>
 

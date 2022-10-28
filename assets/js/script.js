@@ -120,7 +120,10 @@ const HandleHistoryButton = () => {
 }
 
 const HandleGameResize = () => {
+
     let frame = $('.main-frame');
+
+    if(!frame.length) return
     let frameW = frame.width();
     let frameH = frame.height();
     let parent = frame.parent()[0].offsetWidth;
@@ -147,3 +150,12 @@ HandleGameResize();
 $(window).resize(() => {
     HandleGameResize();
 })  
+
+
+const ShowChildMenu = (elem) => {
+    $(elem).find('.menu-child-lists').toggle();
+}
+
+$('.memo-table td').click(function() {
+   $(this).parent().next().toggle();
+});
