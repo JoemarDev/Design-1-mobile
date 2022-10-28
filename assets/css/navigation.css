@@ -1,6 +1,7 @@
 body {
-    background: #000000!important;
+    background: #000000 !important;
 }
+
 .navigation {
     position: relative;
     height: 50px;
@@ -20,7 +21,7 @@ body {
 }
 
 .navigation .user {
-    border:1px solid #ffd989;
+    border: 1px solid #ffd989;
     color: #ffd989;
     border-radius: 100%;
     width: 30px;
@@ -31,7 +32,7 @@ body {
     font-size: 15px;
 }
 
-.navigation .brand  {
+.navigation .brand {
     display: flex;
     align-items: center;
 }
@@ -59,19 +60,19 @@ body {
     font-weight: 300;
 }
 
-.basic-user-information .icon-with-info  i {
+.basic-user-information .icon-with-info i {
     margin-right: 5px;
 
     font-size: 16px;
 }
 
-.basic-user-information  .level {
+.basic-user-information .level {
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-.basic-user-information  img {
+.basic-user-information img {
     width: 20px;
 }
 
@@ -116,8 +117,14 @@ body {
     font-size: 12px;
     text-align: center;
 }
+
+.one-notice .notice img {
+    position: relative;
+    top: 2px;
+}
+
 .one-notice marquee {
-    width: calc( 100% - 35px );
+    width: calc(100% - 35px);
     display: inline-block;
     vertical-align: middle;
     color: #fff;
