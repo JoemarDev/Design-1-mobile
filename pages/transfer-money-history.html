@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casino Page</title>
+    <title>Casin Page</title>
     <link rel="stylesheet" href="../assets/css/iconfont.css">
     <link rel="stylesheet" href="../assets/icofont/icofont.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/navigation.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
-    <link rel="stylesheet" href="../assets/css/pages/qna.css">
+    <link rel="stylesheet" href="../assets/css/pages/transaction.css">
     <link rel="stylesheet" href="../assets/css/pagination.css">
 
     <link rel="stylesheet" href="../assets/css/left-sidebar.css">
     <link rel="stylesheet" href="../assets/css/right-sidebar.css">
 
-    <link rel="stylesheet" href="../assets/css/page.css">
 </head>
 
 <body>
@@ -36,7 +35,8 @@
         </nav>
         <!-- Navigation Section -->
 
- <!-- Basic Information Section -->
+
+        <!-- Basic Information Section -->
         <section class="basic-user-information">
             <div class="level yellow">
                 LV.1
@@ -97,79 +97,83 @@
 
 
         <!-- Page Content -->
-        <section class="page-wrapper px-3">
-            <table class="qna-table">
-                <thead>
-                    <tr>
-                        <th>작성시간</th>
-                        <th>제목</th>
-                        <th>상태</th>
-                        <th>삭제</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr onclick="window.location='qna-view.html'">
-                        <td class="text-center">07.31</td>
-                        <td><span class="elip-content">[자동버튼클릭] 계좌요청</span></td>
-                        <td class="yellow text-center">완료</td>
-                        <td class="text-center"><button>삭제</button></td>
-                    </tr>
-                    <tr onclick="window.location='qna-view.html'">
-                        <td class="text-center">07.31</td>
-                        <td><span class="elip-content">[자동버튼클릭] 계좌요청</span></td>
-                        <td class="yellow text-center">완료</td>
-                        <td class="text-center"><button>삭제</button></td>
-                    </tr>
-                    <tr onclick="window.location='qna-view.html'">
-                        <td class="text-center">07.31</td>
-                        <td><span class="elip-content">[자동버튼클릭] 계좌요청</span></td>
-                        <td class="yellow text-center">완료</td>
-                        <td class="text-center"><button>삭제</button></td>
-                    </tr>
-                    <tr onclick="window.location='qna-view.html'">
-                        <td class="text-center">07.31</td>
-                        <td><span class="elip-content">[자동버튼클릭] 계좌요청</span></td>
-                        <td class="yellow text-center">완료</td>
-                        <td class="text-center"><button>삭제</button></td>
-                    </tr>
-                </tbody>
-            </table>
-
-        </section>
-
-        <ul class="pagination" style="margin-top: 10px">
-            <li><img src="../assets/images/pagination/prev.png" alt=""></li>
-            <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
-            <li class="number active">1</li>
-            <li><img src="../assets/images/pagination/next-single.png" alt=""></li>
-            <li><img src="../assets/images/pagination/next.png" alt=""></li>
-        </ul>
-        <!-- Page Content -->
-
-        <div class="footer-button-qna">
-            <div class="left">
-                <button class="app-button red-button my-4" style="width: 120px; margin-right: 10px;">
-                    <div class="inner-wrapper">
-                        전체삭제
-                    </div>
-                </button>
-            </div>
-            <div class="right" style="display: flex; align-items: center;">
-                <button class="app-button red-button my-4" style="width: 120px; margin-right: 10px;">
-                    <div class="inner-wrapper">
-                        빠른계좌문의
-                    </div>
-                </button>
-
-                <button class="app-button blue-button my-4" style="width: 120px"
-                    onclick="window.location='qna-writing.html'">
-                    <div class="inner-wrapper">
-                        글쓰기
-                    </div>
-                </button>
-            </div>
+        <div class="app-tabs">
+            <div class="app-child-tabs " onclick="window.location='transfer-money.html'">카지노 머니 이동</div>
+            <div class="app-child-tabs active" onclick="window.location='transfer-money-history.html'">머니전환 내역</div>
         </div>
 
+        <div class="transaction-wrapper">
+
+
+
+
+
+            <!-- Transaction Box -->
+            <div class="transaction-box">
+                <div class="transaction-inner-section" style="border: none;">
+                    <p class="title m-0">◎머니전환 내역</p>
+                </div>
+
+                <table class="trans-history-table text-center">
+                    <thead>
+                        <tr>
+                            <th style="width: 100px">전환시간</th>
+                            <th>내용</th>
+                            <th>금액</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022-10-11 05:15:48 </td>
+                            <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                            <td>500,000 원</td>
+                        </tr>
+                        <tr>
+                            <td>2022-10-11 05:15:48 </td>
+                            <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                            <td>500,000 원</td>
+                        </tr>
+                        <tr>
+                            <td>2022-10-11 05:15:48 </td>
+                            <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                            <td>500,000 원</td>
+                        </tr>
+                        <tr>
+                            <td>2022-10-11 05:15:48 </td>
+                            <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                            <td>500,000 원</td>
+                        </tr>
+                        <tr>
+                            <td>2022-10-11 05:15:48 </td>
+                            <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                            <td>500,000 원</td>
+                        </tr>
+                        <tr>
+                            <td>2022-10-11 05:15:48 </td>
+                            <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                            <td>500,000 원</td>
+                        </tr>
+                        <tr>
+                            <td>2022-10-11 05:15:48 </td>
+                            <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                            <td>500,000 원</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <ul class="pagination">
+                <li><img src="../assets/images/pagination/prev.png" alt=""></li>
+                <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
+                <li class="number active">1</li>
+                <li class="number">2</li>
+                <li><img src="../assets/images/pagination/next-single.png" alt=""></li>
+                <li><img src="../assets/images/pagination/next.png" alt=""></li>
+            </ul>
+
+        </div>
+        <!-- Page Content -->
 
 
         <footer>
@@ -186,6 +190,7 @@
         </footer>
 
     </div>
+
 
     <!-- Section Left Side Bar -->
     <section class="left-sidebar">
@@ -205,13 +210,13 @@
             <div class="left-sidebar-content">
                 <div class="left-side-menu">
                     <div class="left-side ">
-                        <div class="left-menu" onclick="OpenMenuChild(1)">
+                        <div class="left-menu active" onclick="OpenMenuChild(1)">
                             <span>카지노</span>
                         </div>
                         <div class="left-menu" onclick="OpenMenuChild(2)">
                             <span>슬롯게임</span>
                         </div>
-                        <div class="left-menu " onclick="OpenMenuChild(3)">
+                        <div class="left-menu" onclick="OpenMenuChild(3)">
                             <span>미니게임</span>
                         </div>
                         <div class="left-menu" onclick="OpenMenuChild(4)">
@@ -220,14 +225,14 @@
                         <div class="left-menu" onclick="window.location='sports-betting-lists.html'">
                             <span>베팅내역</span>
                         </div>
-                        <div class="left-menu active" onclick="window.location='qna.html'">
+                        <div class="left-menu" onclick="window.location='qna.html'">
                             <span>고객센터</span>
                         </div>
                     </div>
                     <div class="right-side">
 
                         <!-- Menu Block -->
-                        <div class="menu-one menu-block">
+                        <div class="menu-one menu-block" style="display: block;">
                             <div class="menu-block-header" onclick="window.location='casino.html'">
                                 <span class="yellow">카지노</span>
                                 <span class="iconfont"></span>
@@ -294,6 +299,7 @@
                             <p class="link" onclick="window.location='mini-game.html'">-준비중-</p>
 
                         </div>
+
 
                         <!-- Menu Block -->
                         <div class="menu-four menu-block">

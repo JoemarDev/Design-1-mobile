@@ -248,6 +248,33 @@ input:focus {
     background-image: linear-gradient(#125489, #03a9f4);
 }
 
+.pink-button {
+    border: solid 1px #ff009c;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.pink-button .inner-wrapper {
+    background-image: linear-gradient(#881b5e, #ff009c);
+}
+
+
+.sky-blue-button {
+    border: solid 1px #22ebff;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+.sky-blue-button .inner-wrapper {
+    background-image: linear-gradient(#1f828b, #22ebff);
+}
+
+
+
 .banner {
     position: relative;
     top: 30%;
