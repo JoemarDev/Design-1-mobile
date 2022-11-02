@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/pages/casino.css">
     <link rel="stylesheet" href="../assets/css/pagination.css">
-
+    <link rel="stylesheet" href="../assets/css/pages/transaction.css">
     <link rel="stylesheet" href="../assets/css/left-sidebar.css">
     <link rel="stylesheet" href="../assets/css/right-sidebar.css">
 
     <link rel="stylesheet" href="../assets/css/page.css">
+    <link rel="stylesheet" href="../assets/css/pop-up.css">
 </head>
 
 <body>
@@ -40,23 +41,35 @@
 
         <!-- Basic Information Section -->
         <section class="basic-user-information">
-            <div class="level yellow">
-                LV.1
+            <div  class="mobile-no-flex">
+                <div style="display: flex">
+                    <div class="level yellow">
+                        LV.1
+                    </div>
+                    <div class="icon-with-info">
+                        <span>홍길동 님,</span>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="iconfont fz24"></i>
+                    <span>쪽지 <span class="yellow">0</span> 건</span>
+                </div>
+             
             </div>
-            <div class="icon-with-info">
-                <span>홍길동 님,</span>
-            </div>
-            <div class="icon-with-info">
-                <i class="iconfont fz24"></i>
-                <span>쪽지 <span class="yellow">0</span> 건</span>
-            </div>
+           
+           
 
             <div class="icon-with-info" style="margin-left: auto">
-                <i class="iconfont fz20"></i>
-                보유머니 : &nbsp;
-                <span class=" yellow">500,000</span>
-                &nbsp;
-                원
+                <div class="mobile-no-flex">
+                    <label style="display: block">
+                        <i class="iconfont fz20"></i>
+                        보유머니 
+                    </label>
+                    <span class=" yellow">100,000,000</span>
+
+                    원
+                </div>
             </div>
 
         </section>
@@ -65,20 +78,27 @@
         <!-- Balance Information Section -->
         <section class="balance-information-section">
             <div class="balance-block">
-                <i class="iconfont fz20"></i>
-                카지노머니 :
-                <span class="yellow">100,000</span>
-                원
-                <img  onclick="window.location='transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../assets/images/icons/change-2.png"
+               
+                <label >
+                    <i class="iconfont fz20"></i>
+                    카지노머니
+                    <img  onclick="window.location='transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../assets/images/icons/change-2.png"
                     alt="">
+                </label>
+                <span class="yellow">100,000,000</span>
+                원
+                
             </div>
             <div class="balance-block">
-
-                <i class="iconfont fz19"></i>
-                포인트 :
-                <span class="yellow">100,000</span>
+                <label >
+                    <i class="iconfont fz19"></i>
+                    포인트
+                    <img  onclick="window.location='transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../assets/images/icons/change.png" alt="">
+                </label>
+               
+                <span class="yellow">100,000,000</span>
                 P
-                <img  onclick="window.location='transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../assets/images/icons/change.png" alt="">
+             
             </div>
         </section>
         <!-- Balance Information Section -->
@@ -100,8 +120,8 @@
 
         <!-- Page Content -->
         <section class="page-wrapper px-3">
-            <div class="page-title-banner">
-                라이브 카지노
+            <div class="page-title-banner"  onclick="PagePopupHandler()">
+                카지노 머니전환
             </div>
 
             <div class="casino-game-lists">
@@ -131,6 +151,217 @@
         </section>
 
         <!-- Page Content -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- POPUP -->
+        <div class="money-popup" style="display: none">
+            <div class="money-popup-overlay"></div>
+            <div class="pop-up-body">
+                <div class="pop-up-header">
+                   <h3>카지노 머니전환</h3>
+                   <button onclick="PagePopupHandler()" class="popup-close">
+                        <img src="../assets/images/icons/close.png" alt="">
+                    </button>
+                </div>
+                <!-- Page Content -->
+                <div class="app-tabs">
+                    <div class="app-child-tabs active" onclick="PageChildHandler(this,1)">카지노 머니 이동</div>
+                    <div class="app-child-tabs" onclick="PageChildHandler(this,2)">머니전환 내역</div>
+                </div>
+                
+                <div class="popup-child-content-1">     
+                    <div class="transaction-wrapper">
+
+                        <!-- Transaction Help Box -->
+                        <div class="transaction-box">
+                            <h3 class="yellow">필독/주의사항</h3>
+                            <ul>
+                                <li>
+                                    <span>① </span>
+                                    <span>에볼루션 = 배팅상한가 1,000만 / 각 테이블 마다 상이함</span>
+                                </li>
+                                <li>
+                                    <span>②</span>
+                                    <span>카지노는 게임별 / 테이블별 금액 설정이 다릅니다.</span>
+                                </li>
+                                <li>
+                                    <span>③</span>
+                                    <span>입장전에 상한가 선택후 입장 부탁드립니다.</span>
+                                </li>
+                                <li>
+                                    <span>④</span>
+                                    <span>살롱 프라이빗은 2,500만원 까지 이용가능합니다.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Transaction Help Box -->
+
+
+
+                        <!-- Transaction Box -->
+                        <div class="transaction-box">
+
+                            <div class="transaction-inner-section">
+                                <p class="title">입금자명</p>
+                                <div class="child-flex">
+                                    <input type="text" id="IC_Amount_2" placeholder="test01">
+                                </div>
+                            </div>
+
+                            <div class="transaction-inner-section">
+                                <p class="title">보유머니</p>
+                                <p class="value"><strong style="color: #ff009c">31,000 </strong> 원</p>
+                            </div>
+                            <div class="transaction-inner-section">
+                                <p class="title">라이브카지노 게임머니</p>
+                                <p class="value"><strong style="color: #22ebff">31,000 </strong> 원</p>
+                            </div>
+
+                            <div class="transaction-inner-section">
+                                <p class="title">머니이동</p>
+                                <div class="child-flex">
+                                    <label class="input-tras-wrapper"><input type="text" id="IC_Amount" placeholder="0"> 원</label>
+                                    <button type="button" class="trans-button reset" name="revise">정정</button>
+                                </div>
+                                <div class="child-flex">
+                                    <button type="button" class="trans-button " name="revise">1천원</button>
+                                    <button type="button" class="trans-button " name="revise">1만원</button>
+                                    <button type="button" class="trans-button " name="revise">3만원</button>
+                                </div>
+                                <div class="child-flex">
+                                    <button type="button" class="trans-button " name="revise">5만원</button>
+                                    <button type="button" class="trans-button " name="revise">30만원</button>
+                                    <button type="button" class="trans-button " name="revise">50만원</button>
+                                </div>
+                                <div class="child-flex">
+                                    <button type="button" class="trans-button " name="revise">100만원 </button>
+                                </div>
+                                <p class="red help">라이브카지노를 이용하기 위해서는 게임머니 이동이 필요합니다.</p>
+                                <p class="red help">필요하신 금액만 이동하여 게임을 즐겨보세요.</p>
+                                <p class="red help">라이브카지노로 이동한 보유머니는 언제든지 보유머니로 다시 이동할 수 있습니다.</p>
+                            </div>
+
+
+                        </div>
+                        <!-- Transaction Box -->
+                        <!-- Submit Button -->
+                        <div class="text-center">
+                            <button class="app-button pink-button">
+                                <div class="inner-wrapper">보유머니 -> 라이브카지노 게임머니로 이동</div>
+                            </button>
+                            <button class="app-button sky-blue-button" style="margin-top: 10px">
+                                <div class="inner-wrapper">라이브카지노 게임머니 -> 보유머니로 이동</div>
+                            </button>
+                        
+                        </div>
+                        <!-- Submit Button -->
+
+
+                    </div>
+                </div>
+                <div class="popup-child-content-2" style="display: none">
+                                
+                    <div class="transaction-wrapper">
+
+
+
+
+
+                        <!-- Transaction Box -->
+                        <div class="transaction-box">
+                            <div class="transaction-inner-section" style="border: none;">
+                                <p class="title m-0">◎머니전환 내역</p>
+                            </div>
+
+                            <table class="trans-history-table text-center">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 100px">전환시간</th>
+                                        <th>내용</th>
+                                        <th>금액</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2022-10-11 05:15:48 </td>
+                                        <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                                        <td>500,000 원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-10-11 05:15:48 </td>
+                                        <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                                        <td>500,000 원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-10-11 05:15:48 </td>
+                                        <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                                        <td>500,000 원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-10-11 05:15:48 </td>
+                                        <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                                        <td>500,000 원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-10-11 05:15:48 </td>
+                                        <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                                        <td>500,000 원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-10-11 05:15:48 </td>
+                                        <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                                        <td>500,000 원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2022-10-11 05:15:48 </td>
+                                        <td class="yellow">[보유머니] 카지노 머니로 전환</td>
+                                        <td>500,000 원</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <ul class="pagination">
+                            <li><img src="../assets/images/pagination/prev.png" alt=""></li>
+                            <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
+                            <li class="number active">1</li>
+                            <li class="number">2</li>
+                            <li><img src="../assets/images/pagination/next-single.png" alt=""></li>
+                            <li><img src="../assets/images/pagination/next.png" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <!-- Page Content -->
+            </div>
+        </div>
+        <!-- POPUP -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -280,6 +511,7 @@
         </div>
     </section>
 
+
     <!-- Section Right Side Bar -->
     <section class="right-sidebar">
 
@@ -306,26 +538,30 @@
                 <div class="sidebar-balance-section">
                     <div class="main-balance-block">
                         <span>보유머니</span>
-                        <label class="yellow main-balance">500,000 원</label>
+                        <label class="yellow main-balance">100,000,000 원</label>
                     </div>
                 </div>
                 <div class="sidebar-balance-section">
                     <div class="balance-block">
-                        <span>카지노머니 :</span>
-                        <span>
-                            <span class="yellow">100,000 </span>
-                            <span>원</span>
+                       <div class="mobile-no-flex"  style="margin-bottom: 10px">
+                            <span style="display: block">카지노머니 :</span>
+                            <span>
+                                <span class="yellow">100,000,000 </span>
+                                <span>원</span>   
+                            </span>
                             <span><img onclick="window.location='transfer-money.html'" style="width: 20px" src="../assets/images/icons/change-2.png" alt=""></span>
-                        </span>
+                       </div>
 
                     </div>
                     <div class="balance-block">
-                        <span>포인트 :</span>
-                        <span>
-                            <span class="yellow">100,000 </span>
-                            <span>P</span>
+                        <div class="mobile-no-flex">
+                            <span style="display: block">포인트 :</span>
+                            <span>
+                                <span class="yellow">100,000,000 </span>
+                                <span>P</span>
+                            </span>
                             <span><img onclick="window.location='transfer-money.html'" style="width: 20px" src="../assets/images/icons/change.png" alt=""></span>
-                        </span>
+                        </div>
                     </div>
                 </div>
 
@@ -364,7 +600,7 @@
                 </div>
                 <div class="menu-block-2" onclick="window.location='mypage.html'">
                     <i class="iconfont"></i>
-                    <span>마이페이지</span>
+                    <span>공지사항</span>
                 </div>
             </div>
 

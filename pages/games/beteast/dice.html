@@ -39,25 +39,39 @@
         </nav>
         <!-- Navigation Section -->
 
-         <!-- Basic Information Section -->
-         <section class="basic-user-information">
-            <div class="level yellow">
-                LV.1
+
+
+        <!-- Basic Information Section -->
+        <section class="basic-user-information">
+            <div  class="mobile-no-flex">
+                <div style="display: flex">
+                    <div class="level yellow">
+                        LV.1
+                    </div>
+                    <div class="icon-with-info">
+                        <span>홍길동 님,</span>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="iconfont fz24"></i>
+                    <span>쪽지 <span class="yellow">0</span> 건</span>
+                </div>
+             
             </div>
-            <div class="icon-with-info">
-                <span>홍길동 님,</span>
-            </div>
-            <div class="icon-with-info">
-                <i class="iconfont fz24"></i>
-                <span>쪽지 <span class="yellow">0</span> 건</span>
-            </div>
+           
+           
 
             <div class="icon-with-info" style="margin-left: auto">
-                <i class="iconfont fz20"></i>
-                보유머니 : &nbsp;
-                <span class=" yellow">500,000</span>
-                &nbsp;
-                원
+                <div class="mobile-no-flex">
+                    <label style="display: block">
+                        <i class="iconfont fz20"></i>
+                        보유머니 
+                    </label>
+                    <span class=" yellow">100,000,000</span>
+
+                    원
+                </div>
             </div>
 
         </section>
@@ -66,23 +80,31 @@
         <!-- Balance Information Section -->
         <section class="balance-information-section">
             <div class="balance-block">
-                <i class="iconfont fz20"></i>
-                카지노머니 :
-                <span class="yellow">100,000</span>
-                원
-                <img  onclick="window.location='../../transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../../../assets/images/icons/change-2.png"
+               
+                <label >
+                    <i class="iconfont fz20"></i>
+                    카지노머니
+                    <img  onclick="window.location='../../transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../../../assets/images/icons/change-2.png"
                     alt="">
+                </label>
+                <span class="yellow">100,000,000</span>
+                원
+                
             </div>
             <div class="balance-block">
-
-                <i class="iconfont fz19"></i>
-                포인트 :
-                <span class="yellow">100,000</span>
+                <label >
+                    <i class="iconfont fz19"></i>
+                    포인트
+                    <img  onclick="window.location='../../transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../../../assets/images/icons/change.png" alt="">
+                </label>
+               
+                <span class="yellow">100,000,000</span>
                 P
-                <img  onclick="window.location='../../transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../../../assets/images/icons/change.png" alt="">
+             
             </div>
         </section>
         <!-- Balance Information Section -->
+
 
 
         <!-- One Notice Section -->
@@ -502,6 +524,7 @@
         </div>
     </section>
 
+
     <!-- Section Right Side Bar -->
     <section class="right-sidebar">
 
@@ -523,35 +546,38 @@
             </div>
             <!-- Right Sidebar Header -->
 
-
             <!-- User Balance Section -->
             <div class="right-sidebar-user-balance">
                 <div class="sidebar-balance-section">
                     <div class="main-balance-block">
                         <span>보유머니</span>
-                        <label class="yellow main-balance">500,000 원</label>
+                        <label class="yellow main-balance">100,000,000 원</label>
                     </div>
                 </div>
                 <div class="sidebar-balance-section">
                     <div class="balance-block">
-                        <span>카지노머니 :</span>
-                        <span>
-                            <span class="yellow">100,000 </span>
-                            <span>원</span>
-                            <span><img onclick="window.location='../../transfer-money.html'" style="width: 20px" src="../../../assets/images/icons/change-2.png"
-                                    alt=""></span>
-                        </span>
+                       <div class="mobile-no-flex"  style="margin-bottom: 10px">
+                            <span style="display: block">카지노머니 :</span>
+                            <span>
+                                <span class="yellow">100,000,000 </span>
+                                <span>원</span>   
+                            </span>
+                            <span><img onclick="window.location='transfer-money.html'" style="width: 20px" src="../assets/images/icons/change-2.png" alt=""></span>
+                       </div>
 
                     </div>
                     <div class="balance-block">
-                        <span>포인트 :</span>
-                        <span>
-                            <span class="yellow">100,000 </span>
-                            <span>P</span>
-                            <span><img onclick="window.location='../../transfer-money.html'"  style="width: 20px" src="../../../assets/images/icons/change.png" alt=""></span>
-                        </span>
+                        <div class="mobile-no-flex">
+                            <span style="display: block">포인트 :</span>
+                            <span>
+                                <span class="yellow">100,000,000 </span>
+                                <span>P</span>
+                            </span>
+                            <span><img onclick="window.location='transfer-money.html'" style="width: 20px" src="../assets/images/icons/change.png" alt=""></span>
+                        </div>
                     </div>
                 </div>
+
             </div>
             <!-- User Balance Section -->
 
@@ -587,7 +613,7 @@
                 </div>
                 <div class="menu-block-2" onclick="window.location='../../mypage.html'">
                     <i class="iconfont"></i>
-                    <span>마이페이지</span>
+                    <span>공지사항</span>
                 </div>
             </div>
 

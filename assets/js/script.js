@@ -159,3 +159,21 @@ const ShowChildMenu = (elem) => {
 $('.memo-table td').click(function() {
    $(this).parent().next().toggle();
 });
+
+
+
+const PagePopupHandler = () => $('.money-popup').toggle();
+
+const PageChildHandler = (elem, type) => {
+    $('.app-child-tabs').removeClass('active')
+    $(elem).addClass('active');
+
+    if(type == 1) {
+        $('.popup-child-content-1').show();
+        $('.popup-child-content-2').hide();
+    } if(type ==
+        2) {
+        $('.popup-child-content-1').hide();
+        $('.popup-child-content-2').show();
+    }
+}

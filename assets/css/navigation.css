@@ -149,6 +149,7 @@ body {
 
 .mobile-no-flex {
     display: flex;
+    align-items: center;
 }
 
 .mobile-no-flex div:nth-child(2) {
@@ -170,6 +171,10 @@ body {
 
     .mobile-no-flex label {
         margin-right: 0;
+    }
+
+    .sidebar-balance-section .main-balance-block .main-balance {
+        font-size: 15px!important;
     }
     
 }

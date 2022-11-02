@@ -96,7 +96,7 @@
     margin-top: 10px;
     background: #221c14;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4 , 1fr);
     grid-gap: 20px;
     padding: 10px 0px;
     border-top: 1px solid #855b08;
@@ -135,4 +135,11 @@
     padding: 10px;
     font-weight: 600;
     font-size: 14px;
+}
+
+@media only screen and (max-width: 400px) {
+    .right-sidebar-menu {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    
 }

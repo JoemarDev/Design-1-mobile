@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../assets/css/pages/transaction.css">
     <link rel="stylesheet" href="../assets/css/pagination.css">
 
+    <link rel="stylesheet" href="../assets/css/pages/qna.css">
     <link rel="stylesheet" href="../assets/css/left-sidebar.css">
     <link rel="stylesheet" href="../assets/css/right-sidebar.css">
 
@@ -36,25 +37,38 @@
         <!-- Navigation Section -->
 
 
- <!-- Basic Information Section -->
+
+        <!-- Basic Information Section -->
         <section class="basic-user-information">
-            <div class="level yellow">
-                LV.1
+            <div  class="mobile-no-flex">
+                <div style="display: flex">
+                    <div class="level yellow">
+                        LV.1
+                    </div>
+                    <div class="icon-with-info">
+                        <span>홍길동 님,</span>
+                    </div>
+                </div>
+
+                <div>
+                    <i class="iconfont fz24"></i>
+                    <span>쪽지 <span class="yellow">0</span> 건</span>
+                </div>
+             
             </div>
-            <div class="icon-with-info">
-                <span>홍길동 님,</span>
-            </div>
-            <div class="icon-with-info">
-                <i class="iconfont fz24"></i>
-                <span>쪽지 <span class="yellow">0</span> 건</span>
-            </div>
+           
+           
 
             <div class="icon-with-info" style="margin-left: auto">
-                <i class="iconfont fz20"></i>
-                보유머니 : &nbsp;
-                <span class=" yellow">500,000</span>
-                &nbsp;
-                원
+                <div class="mobile-no-flex">
+                    <label style="display: block">
+                        <i class="iconfont fz20"></i>
+                        보유머니 
+                    </label>
+                    <span class=" yellow">100,000,000</span>
+
+                    원
+                </div>
             </div>
 
         </section>
@@ -63,20 +77,27 @@
         <!-- Balance Information Section -->
         <section class="balance-information-section">
             <div class="balance-block">
-                <i class="iconfont fz20"></i>
-                카지노머니 :
-                <span class="yellow">100,000</span>
-                원
-                <img  onclick="window.location='transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../assets/images/icons/change-2.png"
+               
+                <label >
+                    <i class="iconfont fz20"></i>
+                    카지노머니
+                    <img  onclick="window.location='transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../assets/images/icons/change-2.png"
                     alt="">
+                </label>
+                <span class="yellow">100,000,000</span>
+                원
+                
             </div>
             <div class="balance-block">
-
-                <i class="iconfont fz19"></i>
-                포인트 :
-                <span class="yellow">100,000</span>
+                <label >
+                    <i class="iconfont fz19"></i>
+                    포인트
+                    <img  onclick="window.location='transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../assets/images/icons/change.png" alt="">
+                </label>
+               
+                <span class="yellow">100,000,000</span>
                 P
-                <img  onclick="window.location='transfer-money.html'" style="width: 20px; position: relative; top: 3px;" src="../assets/images/icons/change.png" alt="">
+             
             </div>
         </section>
         <!-- Balance Information Section -->
@@ -96,54 +117,463 @@
         <!-- One Notice Section -->
 
 
-        <!-- Page Content -->
-        <div class="app-tabs">
-            <div class="app-child-tabs active" onclick="window.location='cash-in.html'">충전신청</div>
-            <div class="app-child-tabs" onclick="window.location='cash-out.html'">환전신청</div>
-            <div class="app-child-tabs" onclick="window.location='point-history.html'">포인트전환</div>
-        </div>
 
-        <div class="transaction-wrapper">
 
+        <div class="transaction-wrapper" >
 
 
 
             <!-- Transaction Box -->
-            <div class="transaction-box">
+            <div class="transaction-boxs gray">
 
-                <div class="transaction-inner-section">
-                    <p class="title">기존 비밀번호</p>
-                    <div class="child-flex">
-                        <input type="text" id="IC_Amount_2" placeholder="">
-                    </div>
-                </div>
-                <div class="transaction-inner-section">
-                    <p class="title">새비밀번호</p>
-                    <div class="child-flex">
-                        <input type="text" id="IC_Amount_2" placeholder="">
-                    </div>
-                </div>
-                <div class="transaction-inner-section">
-                    <p class="title">새비밀번호확인</p>
-                    <div class="child-flex">
-                        <input type="text" id="IC_Amount_2" placeholder="">
-                    </div>
-                </div>
+                <table class="qna-table memo-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th style="width: 80%">제목</th>
+                           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left">★★ 10월19일 NBA 개막기념 돌발 이벤트 진행 ★★</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left">★★ 10월 18일 MLB리그 경기 취소 안내 ★★</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left">★★★((공지)) 슬롯게임 긴급점검 종료 안내 ★★</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left">★★★((공지)) 슬롯 긴급 점검 안내 ★★★</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left"> ★★★ 크라운게임 정기 점검 종료 안내 ★★★</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left"> ★★★ 크라운게임 정기 점검 안내 ★★★</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left"> ★★★ 토큰게임 정기 점검 종료 안내 ★★★</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left">★★★ 토큰게임 정기 점검 안내 ★★★</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left"> ★★ 10월 16일 농협 시스템 정기점검 안내 ★★</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;"><img src="../assets/images/icons/my-page.png" style="margin-right: 5px" alt=""></td>
+                            <td class="text-left"> ★★ 10월16일 돌발 이벤트 진행 MLB리그 벼랑 끝 다저스 희생양 될 위기</td>
+                           
+                        </tr>
+                        <tr style="display: none;">
+                            <td class="no-hover" colspan="5">
+                                <div class="table-memo-content ">
+                                    <p>● ▲ ■ 대한민국 최초 온라인 놀이터■ ▲ ●<br>
+                                        <br>
+                                        오 락 실 에 오신 것을 환영합니다 !<br>
+                                        안녕하세요 회원님<br>
+                                        <br>
+                                        ☆★ NBA 개막 기념 돌발이벤트 ★☆<br>
+                                        <br>
+                                        ▶️ 이벤트 시간 0 8 : 0 0 ~ 1 1 : 0 0 ◀️<br>
+                                        <br>
+                                        -기존 첫충/매충/돌발 외 추가적으로 포인트 + 5 %<br>
+                                        <br>
+                                        추가 포인트 지급 이벤트를 진행하고 있으니 많은 참여 바랍니다.<br>
+                                        <br>
+                                        -입금시 자동지급되며 1회최대 지급포인트는 10만포인트입니다<br>
+                                        <br>
+                                        -입금보너스 제한된 회원님들에게는 지급되지않습니다.<br>
+                                        <br>
+                                        -돌발보너스 지급시 미니게임의경우 400%롤링 이상 후 환전가능합니다.<br>
+                                        <br>
+                                        -카지노 입금 보너스는 추가 적용되지않습니다.<br>
+                                        <br>
+                                        -금일 환전내역있는 회원님들께서는 참여불가능합니다.<br>
+                                        <br>
+                                        언제나 회원님들께 최고의 서비스를 제공해드리도록 노력하고 또 노력하겠습니다.<br>
+                                        <br>
+                                        또 다른 문의사항 있을 시 고객센터로 문의 해주시면 친절히 답변 도와드리겠습니다.<br>
+                                        <br>
+                                        언제나 최선을 다 하는 오 락 실 이 되도록 노력하겠습니다.<br>
+                                        <br>
+                                        -오락실 운영팀 올림-
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
 
 
+                    </tbody>
+                </table>
             </div>
-            <!-- Transaction Box -->
-            <!-- Submit Button -->
-            <div class="text-center">
-                <button class="submit-deposit">
-                    확인
-                </button>
-            </div>
-            <!-- Submit Button -->
 
+
+            <ul class="pagination">
+                <li><img src="../assets/images/pagination/prev.png" alt=""></li>
+                <li><img src="../assets/images/pagination/prev-single.png" alt=""></li>
+                <li class="number active">1</li>
+                <li class="number">2</li>
+                <li><img src="../assets/images/pagination/next-single.png" alt=""></li>
+                <li><img src="../assets/images/pagination/next.png" alt=""></li>
+            </ul>
 
         </div>
         <!-- Page Content -->
+
 
 
         <footer>
@@ -290,6 +720,7 @@
         </div>
     </section>
 
+
     <!-- Section Right Side Bar -->
     <section class="right-sidebar">
 
@@ -316,26 +747,30 @@
                 <div class="sidebar-balance-section">
                     <div class="main-balance-block">
                         <span>보유머니</span>
-                        <label class="yellow main-balance">500,000 원</label>
+                        <label class="yellow main-balance">100,000,000 원</label>
                     </div>
                 </div>
                 <div class="sidebar-balance-section">
                     <div class="balance-block">
-                        <span>카지노머니 :</span>
-                        <span>
-                            <span class="yellow">100,000 </span>
-                            <span>원</span>
+                       <div class="mobile-no-flex"  style="margin-bottom: 10px">
+                            <span style="display: block">카지노머니 :</span>
+                            <span>
+                                <span class="yellow">100,000,000 </span>
+                                <span>원</span>   
+                            </span>
                             <span><img onclick="window.location='transfer-money.html'" style="width: 20px" src="../assets/images/icons/change-2.png" alt=""></span>
-                        </span>
+                       </div>
 
                     </div>
                     <div class="balance-block">
-                        <span>포인트 :</span>
-                        <span>
-                            <span class="yellow">100,000 </span>
-                            <span>P</span>
+                        <div class="mobile-no-flex">
+                            <span style="display: block">포인트 :</span>
+                            <span>
+                                <span class="yellow">100,000,000 </span>
+                                <span>P</span>
+                            </span>
                             <span><img onclick="window.location='transfer-money.html'" style="width: 20px" src="../assets/images/icons/change.png" alt=""></span>
-                        </span>
+                        </div>
                     </div>
                 </div>
 
@@ -374,7 +809,7 @@
                 </div>
                 <div class="menu-block-2" onclick="window.location='mypage.html'">
                     <i class="iconfont"></i>
-                    <span>마이페이지</span>
+                    <span>공지사항</span>
                 </div>
             </div>
 

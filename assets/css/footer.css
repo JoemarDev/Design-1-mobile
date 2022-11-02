@@ -1,5 +1,5 @@
 .page-footer {
-    height: 180px;
+    height: 100px;
     text-align: center;
     color: rgba(255,255,255,0.3);
     font-size: 12px;
@@ -8,6 +8,9 @@
     padding-bottom: 20px;
     background: #000;
     border-top: 1px solid #996806;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .page-footer .gray-logo {
@@ -15,7 +18,7 @@
 }
 
 .page-footer  img {
-    width: 106px;
+    width: 150px;
 }
 
 .page-footer p {
@@ -23,7 +26,7 @@
 }
 
 .page-footer .pc-view {
-    margin-top: 18px;
+   margin-left: 20px;
 }
 
 .page-footer .pc-view a {
